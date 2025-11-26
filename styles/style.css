@@ -1,3 +1,60 @@
-.CT{
-    color:green
+body {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Neucha', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1;
+}
+.shar{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 700px;
+}
+
+.shar1{
+    position: absolute;
+    top: 18%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 350px;
+}
+
+.NE{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+text-align: center;
+padding: 75px;
+    border-radius: 20px;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(109, 201, 230, 0.404);
+}
+.start{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+text-align: center;
+padding: 75px;
+    border-radius: 20px;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(109, 201, 230, 0.404);
 }

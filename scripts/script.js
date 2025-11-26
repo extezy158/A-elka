@@ -113,3 +113,32 @@ let updateToys=toys.map(toy => {
 console.log(updateToys);
 
 let car={brand:'BMW', year:'2020'};
+
+
+let tree={
+    type: 'snowy',
+    background: 'living room',
+    garland:'multi',
+    toys: [
+        {id:1, x:120, y:240, type:'ball_red'},
+        {id:2, x:160, y:300, type:'ball_gold'},
+    ]
+};
+
+user.name='Ivan';
+user.age=30;
+delete user.name;
+console.log(user);
+
+
+let original={a:1, b:2};
+
+let copy=Object.assign({},original);
+copy.a=99;
+console.log(original.a);
+
+
+let otiginal={a:1, b:2};
+let copy={...otiginal};
+copy.b=300;
+console.log(otiginal.b);
