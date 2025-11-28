@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1;
+
 }
 .shar{
     position: absolute;
@@ -31,30 +32,44 @@ body {
 }
 
 .NE{
+    text-decoration: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
 text-align: center;
-padding: 75px;
-    border-radius: 20px;
+padding: 50px;
+    border-radius: 50px;
     font-size: 50px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(109, 201, 230, 0.404);
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
 }
 .start{
+    text-decoration: none;
     position: absolute;
-    bottom: 50%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-text-align: center;
-padding: 75px;
-    border-radius: 20px;
+    text-align: center;;
+   padding:5px 70px ;
+    border-radius: 50px;
     font-size: 50px;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background-color: rgba(109, 201, 230, 0.404);
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #fff;
+
+     
+    }
+
+.start:hover{
+    border-color: rgb(91, 210, 214);
+}
+.NE:hover{
+    border-color: rgb(91, 210, 214);
 }
