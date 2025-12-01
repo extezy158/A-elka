@@ -1,144 +1,177 @@
-console.log("hello");
-
-let best=['gn','fs','sa','das','asd'];
-
-let numbers=[10,20,30];
-for(let i=0;i<numbers.length;i++){
-    console.log(numbers[i]);
-}
-
-let fruits=['apple','banana','orange'];
-for(let fruit of fruits){
-    console.log(fruit);
-}
-
-let students=[
-    {name:'John',age:20},
-    {name:'Jane',age:18},
-    {name:'Bob',age:22},
-];
-
-for(let student of students){
-    console.log(student.name);
-}
-
-
-let nums1=[10,20,30,40];
-
-let part=nums1.slice(1,3);
-console.log(part);
-console.log(nums1);
-
-let nums2=[10,20,30];
-let newNums2=nums2.map(n => n+5);
-console.log(newNums2);
-
-let nums3=[5,12,3,8,6,23,4,65];
-let even=nums3.filter(n => n > 10);
-console.log(even);
-
-
-let boxes=[
-    {weight: 2, label:"Легкая"},
-    {weight: 5, label:"Средняя"},
-    {weight: 12, label:"Тяжелая"},
-    {weight: 15, label:"Очень тяжелая"}
-];
-
-let heavyBox=boxes.find(box => box.weight > 10);
-console.log(heavyBox);
-
-let innerPlanets=["Меркурий","Венера","Земля","Марс"];
-let outerPlanets=["Юпитер","Сатурн","Уран","Нептун"];
-
-let allPlanets=innerPlanets.concat(outerPlanets);
-console.log(allPlanets);
-
-let words=['Я','Люблю','JS'];
-
-let sentacne=words.join(' ');
-console.log(sentacne);
-
-let toys=[
-    {
-        name:'Большой шар с рисунком Цветок',
-        count:2,
-        year:1960,
-        shape:'шар',
-        color:'желтый',
-        size:'большой',
-        favotite:false
+let toys = [
+    { 
+        name: "Красный матовый шарик",
+         color: "red", 
+         count: 5, 
+         year: 2023, 
+         shape: "ball", 
+         favorite: true,
+         image: "./images/igrushki/igrushka1.png"
+        },
+    { 
+        name: "Красно-белая игрушка", 
+        color: "red",
+        count: 8, 
+        year: 2010,
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka16.png"
     },
-    {
-        name:'зеленый шар с цветочным узором',
-        count:5,
-        year:2000,
-        shape:'шар',
-        color:'зеленый',
-        size:'большой',
-        favotite:false
+    { 
+        name: "Желтый шарик с цветком", 
+        color: "yellow", 
+        count: 12, 
+        year: 1998 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka2.png" 
     },
-    {
-        name:'Красный шар с напылением',
-        count:3,
-        year:1990,
-        shape:'шар',
-        color:'красный',
-        size:'средний',
-        favotite:false
-    },
-    {
-        name:'Маленький синий шар',
-        count:6,
-        year:2010,
-        shape:'шар',
-        color:'синий',
-        size:'маленький',
-        favotite:false
+    { 
+        name: "Зеленый шарик с узором", 
+        color: "green", 
+        count: 6,
+        year:  2005, 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka3.png" 
     }
-]
+    ,
+    { 
+        name: "Красная игрушка", 
+        color: "red", 
+        count: 5, 
+        year: 2024 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka4.png" 
+    }
+    ,
+    { 
+        name: "Красный шарик с узором", 
+        color: "red", 
+        count: 8, 
+        year: 2016 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka5.png" 
+    }
+    ,
+    { 
+        name: "Белая игрушка", 
+        color: "white", 
+        count: 12, 
+        year: 2025 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka6.png" 
+    }
+    ,
+    { 
+        name: "Красный шарик", 
+        color: "red", 
+        count: 6, 
+        year: 2000 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka7.png" 
+    }
+    ,
+    { 
+        name: "Белый колокольчик", 
+        color: "white", 
+        count: 5, 
+        year: 2013 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka8.png" 
+    }
+    ,
+    { 
+        name: "Золотой шарик", 
+        color: "gold", 
+        count: 8, 
+        year: 1987 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka9.png" 
+    }
+    ,
+    { 
+        name: "Белая шишка", 
+        color: "white", 
+        count: 12, 
+        year: 2019 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka10.png" 
+    }
+    ,
+    { 
+        name: "Белый шарик", 
+        color: "white", 
+        count: 6, 
+        year: 2024 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka11.png" 
+    }
+    ,
+    { 
+        name: "Новогодний шарик маленький", 
+        color: "NY", 
+        count: 5, 
+        year: 2024 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka12.png" 
+    }
+    ,
+    { 
+        name: "Новогодний шарик большой", 
+        color: "NY", 
+        count: 8, 
+        year: 2024 , 
+        shape: "ball", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka13.png" 
+    }
+    ,
+    { 
+        name: "Новогодняя игрушка груша", 
+        color: "NY", 
+        count: 12, 
+        year: 2024 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka4.png" 
+    }
+    ,
+    { 
+        name: "Новогодняя игрушка", 
+        color: "NY", 
+        count: 6, 
+        year: 2024 , 
+        shape: "toy", 
+        favorite: true, 
+        image: "./images/igrushki/igrushka6.png" 
+    }
+];
 
+const toysGrid=document.querySelector(".toys-grid");
 
-toys.forEach(toy => {
-    console.log(toy.name+'-'+toy.color+', форма:'+toy.shape+', количество:'+toy.count);
-})
-
-
-let updateToys=toys.map(toy => {
-    return{
-        ...toy,
-        count:toy.count+1
-    };
+toys.forEach((toy,index)=>{
+    //...
 });
-console.log(updateToys);
+const toyBox=document.createElement("div");
 
-let car={brand:'BMW', year:'2020'};
+const img=document.createElement("img");
+img.src=toy.image;
+img.classList.add("toy");
+img.draggable=true;
+img.dataset.index=index;
 
-
-let tree={
-    type: 'snowy',
-    background: 'living room',
-    garland:'multi',
-    toys: [
-        {id:1, x:120, y:240, type:'ball_red'},
-        {id:2, x:160, y:300, type:'ball_gold'},
-    ]
-};
-
-user.name='Ivan';
-user.age=30;
-delete user.name;
-console.log(user);
-
-
-let original={a:1, b:2};
-
-let copy=Object.assign({},original);
-copy.a=99;
-console.log(original.a);
-
-
-let otiginal={a:1, b:2};
-let copy={...otiginal};
-copy.b=300;
-console.log(otiginal.b);
+const countBox=document.createElement("div");
+countBox.textContent=toy.count;
+countBox.style.color=toy.color;
+countBox.style.textAlign="center";
+countBox.style.fontSize="14px";
